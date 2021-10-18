@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Teste.Performace.EF
+build_property.ProjectDir = C:\.Net Projects\TesteEF\Teste.Performace.EF\Teste.Performace.EF\
