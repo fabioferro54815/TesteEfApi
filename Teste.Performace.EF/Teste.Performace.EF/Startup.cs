@@ -53,6 +53,8 @@ namespace Teste.Performace.EF
 
             app.UseSwagger();
 
+            app.UseRouting();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
