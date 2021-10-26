@@ -18,7 +18,7 @@ namespace Teste.Performace.EF.Contexts
         {
         }
 
-        public virtual DbSet<Usuario> Usuarios { get; set; }
+        public virtual DbSet<Usuarios> Usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -33,7 +33,7 @@ namespace Teste.Performace.EF.Contexts
         {
             modelBuilder.HasAnnotation("Relational:Collation", "Latin1_General_CI_AS");
 
-            modelBuilder.Entity<Usuario>(entity =>
+            modelBuilder.Entity<Usuarios>(entity =>
             {
                 entity.Property(e => e.Id).HasColumnName("ID");
 

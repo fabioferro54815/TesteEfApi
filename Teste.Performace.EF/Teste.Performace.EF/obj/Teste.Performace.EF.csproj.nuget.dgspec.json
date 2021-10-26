@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.Net Projects\\TesteEF\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj": {}
+    "C:\\.Net Projects\\TesteEF\\TesteEfApi\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj": {}
   },
   "projects": {
-    "C:\\.Net Projects\\TesteEF\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj": {
+    "C:\\.Net Projects\\TesteEF\\TesteEfApi\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.Net Projects\\TesteEF\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj",
+        "projectUniqueName": "C:\\.Net Projects\\TesteEF\\TesteEfApi\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj",
         "projectName": "Teste.Performace.EF",
-        "projectPath": "C:\\.Net Projects\\TesteEF\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj",
+        "projectPath": "C:\\.Net Projects\\TesteEF\\TesteEfApi\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj",
         "packagesPath": "C:\\Users\\fabio\\.nuget\\packages\\",
-        "outputPath": "C:\\.Net Projects\\TesteEF\\Teste.Performace.EF\\Teste.Performace.EF\\obj\\",
+        "outputPath": "C:\\.Net Projects\\TesteEF\\TesteEfApi\\Teste.Performace.EF\\Teste.Performace.EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sDgt7eSwVGvSgaSqdk+4pXj8PfS18cA/H5SL89jtUDHr4evuxBbwi0D9TvuVg8+yA9uVtAyChMm+TckbGT9w8A==",
+  "dgSpecHash": "RkrS+TU671+rQ+RutmGFr1PO3cSEiHEyv1C8xjQA0o30vahfdC7Qcr3Qq44hGnrwEyXXDmO0E64u2Ikf2AQHCA==",
   "success": true,
-  "projectFilePath": "C:\\.Net Projects\\TesteEF\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj",
+  "projectFilePath": "C:\\.Net Projects\\TesteEF\\TesteEfApi\\Teste.Performace.EF\\Teste.Performace.EF\\Teste.Performace.EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fabio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.20\\microsoft.aspnetcore.jsonpatch.3.1.20.nupkg.sha512",

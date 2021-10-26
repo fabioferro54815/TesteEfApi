@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Teste.Performace.EF.Contexts;
 using Teste.Performace.EF.Domains;
 using Teste.Performace.EF.Interfaces;
 
@@ -11,7 +12,10 @@ namespace Teste.Performace.EF.Repositories
     {
         public List<Usuarios> Listar()
         {
-            throw new NotImplementedException();
+            using (TesteEFContext ctx = new TesteEFContext())
+            {
+                return ctx.Usuarios.ToList();
+            }
         }
     }
 }
