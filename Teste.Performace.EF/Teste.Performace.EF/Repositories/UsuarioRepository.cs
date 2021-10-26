@@ -17,5 +17,13 @@ namespace Teste.Performace.EF.Repositories
                 return ctx.Usuarios.ToList();
             }
         }
+
+        public Usuarios ListarPorId(int id)
+        {
+            using (TesteEFContext ctx = new TesteEFContext())
+            {
+                return ctx.Usuarios.Find(id);
+            }
+        }
     }
 }

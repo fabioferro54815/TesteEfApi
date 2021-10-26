@@ -9,5 +9,7 @@ namespace Teste.Performace.EF.Interfaces
     public interface IUsuarios
     {
         List<Usuarios> Listar();
+
+        Usuarios ListarPorId(int id);
     }
 }

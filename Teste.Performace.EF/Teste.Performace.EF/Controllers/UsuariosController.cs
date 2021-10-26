@@ -25,5 +25,11 @@ namespace Teste.Performace.EF.Controllers
         {
             return Ok(UsuarioRepository.Listar());
         }
+
+        [HttpGet("{id}")]
+        public IActionResult ListarPorId(int id)
+        {
+            return Ok(UsuarioRepository.ListarPorId(id));
+        }
     }
 }
