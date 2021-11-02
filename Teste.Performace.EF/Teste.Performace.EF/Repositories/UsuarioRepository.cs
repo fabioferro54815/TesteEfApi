@@ -12,51 +12,46 @@ namespace Teste.Performace.EF.Repositories
     {
         public List<Usuarios> Listar()
         {
-            using (TesteEFContext ctx = new TesteEFContext())
-            {
-                return ctx.Usuarios.ToList();
-            }
+            using TesteEFContext ctx = new TesteEFContext();
+
+            return ctx.Usuarios.ToList();
         }
 
         public Usuarios ListarPorId(int id)
         {
-            using (TesteEFContext ctx = new TesteEFContext())
-            {
-                return ctx.Usuarios.Find(id);
-            }
+            using TesteEFContext ctx = new TesteEFContext();
+
+            return ctx.Usuarios.Find(id);
         }
 
         public void Cadastrar(Usuarios usuario)
         {
-            using (TesteEFContext ctx = new TesteEFContext())
-            {
-                ctx.Add(usuario);
-                ctx.SaveChanges();
-            }
+            using TesteEFContext ctx = new TesteEFContext();
+
+            ctx.Add(usuario);
+            ctx.SaveChanges();
         }
 
         public void Alterar(Usuarios usuario)
         {
-            using (TesteEFContext ctx = new TesteEFContext())
-            {
-                Usuarios usuarioBuscado = ctx.Usuarios.FirstOrDefault(x => x.Id == usuario.Id);
+            using TesteEFContext ctx = new TesteEFContext();
 
-                usuarioBuscado.Nome = usuario.Nome;
-                usuarioBuscado.Email = usuario.Email;
+            Usuarios usuarioBuscado = ctx.Usuarios.FirstOrDefault(x => x.Id == usuario.Id);
 
-                ctx.Update(usuarioBuscado);
-                ctx.SaveChanges();
-            }
+            usuarioBuscado.Nome = usuario.Nome;
+            usuarioBuscado.Email = usuario.Email;
+
+            ctx.Update(usuarioBuscado);
+            ctx.SaveChanges();
         }
 
         public void Deletar(int id)
         {
-            using (TesteEFContext ctx = new TesteEFContext())
-            {
-                Usuarios usuarioBuscado = ctx.Usuarios.Find(id);
-                ctx.Usuarios.Remove(usuarioBuscado);
-                ctx.SaveChanges();
-            }
+            using TesteEFContext ctx = new TesteEFContext();
+
+            Usuarios usuarioBuscado = ctx.Usuarios.Find(id);
+            ctx.Usuarios.Remove(usuarioBuscado);
+            ctx.SaveChanges();
         }
     }
 }
