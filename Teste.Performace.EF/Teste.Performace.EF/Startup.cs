@@ -53,6 +53,11 @@ namespace Teste.Performace.EF
 
             app.UseSwagger();
 
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Teste API V1");
+            });
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
