@@ -25,5 +25,38 @@ namespace Teste.Performace.EF.Repositories
                 return ctx.Usuarios.Find(id);
             }
         }
+
+        public void Cadastrar(Usuarios usuario)
+        {
+            using (TesteEFContext ctx = new TesteEFContext())
+            {
+                ctx.Add(usuario);
+                ctx.SaveChanges();
+            }
+        }
+
+        public void Alterar(Usuarios usuario)
+        {
+            using (TesteEFContext ctx = new TesteEFContext())
+            {
+                Usuarios usuarioBuscado = ctx.Usuarios.FirstOrDefault(x => x.Id == usuario.Id);
+
+                usuarioBuscado.Nome = usuario.Nome;
+                usuarioBuscado.Email = usuario.Email;
+
+                ctx.Update(usuarioBuscado);
+                ctx.SaveChanges();
+            }
+        }
+
+        public void Deletar(int id)
+        {
+            using (TesteEFContext ctx = new TesteEFContext())
+            {
+                Usuarios usuarioBuscado = ctx.Usuarios.Find(id);
+                ctx.Usuarios.Remove(usuarioBuscado);
+                ctx.SaveChanges();
+            }
+        }
     }
 }

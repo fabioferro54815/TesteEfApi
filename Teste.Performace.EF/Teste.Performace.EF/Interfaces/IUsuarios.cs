@@ -11,5 +11,11 @@ namespace Teste.Performace.EF.Interfaces
         List<Usuarios> Listar();
 
         Usuarios ListarPorId(int id);
+
+        void Cadastrar(Usuarios usuario);
+
+        void Alterar(Usuarios usuario);
+
+        void Deletar(int id);
     }
 }
